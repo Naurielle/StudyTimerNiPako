@@ -20,7 +20,7 @@ StudyTimerNiPako is a cozy, browser-only study timer based on Pako Mode: study t
 - Built-in alarm sounds and custom sound upload
 - Looping alarm until dismissed
 - Break warnings at 1 hour, 5 minutes, and 1 minute remaining
-- Break bank with a 2 hour limit
+- Break bank with a 2 hour limit; ending or skipping a break saves unused time
 - Bank spending and manual break adjustment unlocked after a 7-day streak of studying at least 1 hour per day
 - Daily study/session goals
 - Streaks, grace days, and 3 restore chances
