@@ -446,7 +446,7 @@
       : state.breakDurationSec;
     const remainingSec = clamp(state.breakDurationSec - elapsedSec, 0, state.breakDurationSec);
 
-    if (reason === "early") {
+    if (reason === "early" || reason === "skip") {
       const before = state.bankSec;
       state.bankSec = clamp(state.bankSec + remainingSec, 0, BANK_CAP_SECONDS);
       const added = state.bankSec - before;
@@ -468,7 +468,7 @@
       activateBreakFinishedAlarm();
     } else if (reason === "skip") {
       state.alarmActive = false;
-      setStatus("Break skipped. Start studying again when you are ready.");
+      setStatus("Break skipped. Unused time was sent to your break bank.");
     } else {
       state.alarmActive = false;
       setStatus("Break ended early. Unused time was sent to your break bank.");
